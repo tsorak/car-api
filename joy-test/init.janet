@@ -3,8 +3,9 @@
 (defn home [request]
   (text/plain "You found joy!"))
 
-(route :get "/" :home)
+(defroutes router
+  [:get "/" :home])
 
-(def app (app))
+(def app (app {:routes router}))
 
 (server app 9001)
