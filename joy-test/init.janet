@@ -1,11 +1,6 @@
 (use joy)
+(import ./router :as rtr)
 
-(defn home [request]
-  (text/plain "You found joy!"))
-
-(defroutes router
-  [:get "/" :home])
-
-(def app (app {:routes router}))
+(def app (app {:routes rtr/routes}))
 
 (server app 9001)
