@@ -1,8 +1,8 @@
 (declare-project
-  :name "joy-test"
+  :name "car-api"
   :description ``` ```
   :version "0.0.0")
 
 (declare-source
-  :prefix "joy-test"
-  :source ["joy-test/init.janet"])
+  :prefix "car-api"
+  :source ["car-api/init.janet"])
